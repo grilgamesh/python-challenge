@@ -47,7 +47,6 @@ pollpath = os.path.join("Resources", "election_data.csv")
 #instantiate variables: 
 results = {}
 
-
 #open the file as polldata
 with open(pollpath, encoding='utf') as csvfile:
     polldata = csv.reader(csvfile, delimiter=",")
@@ -75,8 +74,6 @@ with open(pollpath, encoding='utf') as csvfile:
             winner = candy
             winningvotes = results[candy]
     
-
-
     #write out summary
     output = [f""
                 f"Election Results",
